@@ -58,6 +58,12 @@ public class WheelOfFortune<T> {
      */
     public T get() {
         // TO BE IMPLEMENTED
+        //throw new UnsupportedOperationException();
+        int f = random.nextInt(total);
+        for (Event<T> event :events){
+            if (f < event.frequency) return event.event;
+            f -= event.frequency;
+        }
         throw new UnsupportedOperationException();
     }
 
