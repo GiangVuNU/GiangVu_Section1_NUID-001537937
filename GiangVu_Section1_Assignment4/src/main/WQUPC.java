@@ -1,10 +1,10 @@
 /*
  * Copyright (c) 2017. Phasmid Software
  */
-package edu.neu.coe.info6205.union_find;
+package main;
 
 /**
- * Weighted Quick Union with Path Compression + implement point to root (2 pass  variant)
+ * Weighted Quick Union with Path Compression + implement point to root (2 pass variant)
  */
 public class WQUPC {
     private final int[] parent;   // parent[i] = parent of i
@@ -112,3 +112,4 @@ public class WQUPC {
     }
 
 }
+
